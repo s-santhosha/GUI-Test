@@ -40,4 +40,4 @@ jobs:
       # run tests!
       - run:
           name: Start Selenium Test on Browser Stack & send slack notification & this is demo
-          command: mvn test
+          command:  mvn -X clean ; mvn -X compile ; mvn test
