@@ -22,5 +22,5 @@ $ mvn verify -Ddriver=firefox
 ## Test Report 
 The Extent test results will be recorded in the `Reports` directory as a HTML Report 
 
-## Circle Integration
+## CircleCI Integration
 Any changes to code triggers circleci pipeline and test is executed over docker image
