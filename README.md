@@ -10,5 +10,18 @@ To run the tests , type `mvn test` on the command line for default browser selec
 Or
 To run the tests with specific browser 
 
+By default, the tests will run using Chrome Headless for the purpuse of CI/CD implementation.
+
+In order to "turn off" the headless mode, use `mvn verify -Ddriver=chrome -Dheadless.mode=false`
+
+To run them in Firefox by overriding the `driver` system property, e.g.
+
+```json
+$ mvn verify -Ddriver=firefox
+```
+Or 
+```json
+$ gradle test -Pdriver=firefox
+
 ## Test Report 
 The Extent test results will be recorded in the `Reports` directory as a HTML Report 
