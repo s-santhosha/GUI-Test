@@ -19,9 +19,8 @@ To run them in Firefox by overriding the `driver` system property, e.g.
 ```json
 $ mvn verify -Ddriver=firefox
 ```
-Or 
-```json
-$ gradle test -Pdriver=firefox
-
 ## Test Report 
 The Extent test results will be recorded in the `Reports` directory as a HTML Report 
+
+## Circle Integration
+Any changes to code triggers circleci pipeline and test is executed over docker image
